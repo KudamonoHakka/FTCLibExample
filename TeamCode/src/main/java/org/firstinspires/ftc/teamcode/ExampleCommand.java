@@ -18,6 +18,7 @@ public class ExampleCommand extends CommandBase
         m_leftY = leftY;
         m_rightY = rightY;
 
+        // This is needed for defining default commands
         addRequirements(m_subsystem);
     }
 
@@ -27,6 +28,7 @@ public class ExampleCommand extends CommandBase
 
     }
 
+    // All this looping function does is continuously plug controller input into moving the drive-base
     @Override
     public void execute()
     {
